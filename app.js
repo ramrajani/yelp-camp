@@ -19,7 +19,7 @@ const indexRoute      = require("./routes/index"),
       passwordRoute   = require("./routes/password");
 
 // connect to the DB
-let url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v13"; // fallback in case global var not working
+let url = process.env.DATABASEURL || "'mongodb+srv://ram-rajani:gocashless@cluster0-dnfuy.mongodb.net/test?retryWrites=true&w=majority'"; // fallback in case global var not working
 mongoose.connect(url, {useMongoClient: true});
 
 app.set("view engine", "ejs");
